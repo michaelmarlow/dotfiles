@@ -16,7 +16,7 @@
     # Clone a repository including all submodules
     c = clone --recursive
     # Commit all changes
-    ac = "!f() { !git add -A && git commit "$1"; }; f"
+    ac = !git add -A && git commit -m
     # Switch to a branch, creating it if necessary
     go = checkout -B
     # Show verbose output about tags, branches or remotes
@@ -36,6 +36,9 @@
 
     # Don't trust file modes
     filemode = false
+    
+    # Default editor
+    editor = vi
 
 [color]
     # Use colors in Git commands that are capable of colored output when outputting to the terminal
