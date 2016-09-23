@@ -50,6 +50,8 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git common-aliases archlinux debian httpie history jsontools pip python sudo systemd tmux urltools vagrant web-search wd
 per-directory-history dirhistory history-substring-search composer symfony docker)
 
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+
 source $ZSH/oh-my-zsh.sh
 
 # Prefer US English and UTF-8
