@@ -47,8 +47,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git common-aliases archlinux debian httpie history jsontools pip python sudo systemd tmux urltools vagrant web-search wd
-per-directory-history dirhistory history-substring-search composer symfony docker)
+plugins=(git common-aliases archlinux debian httpie history jsontools pip python sudo systemd tmux urltools vagrant web-search wd dirhistory history-substring-search composer symfony docker)
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 
