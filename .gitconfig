@@ -16,7 +16,7 @@
     # Clone a repository including all submodules
     c = clone --recursive
     # Commit all changes
-    ac = !git add -A && git commit -av
+    ac = "!f() { !git add -A && git commit "$1"; }; f"
     # Switch to a branch, creating it if necessary
     go = checkout -B
     # Show verbose output about tags, branches or remotes
@@ -33,6 +33,9 @@
 [core]
     # Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
     whitespace = space-before-tab,indent-with-non-tab,trailing-space
+
+    # Don't trust file modes
+    filemode = false
 
 [color]
     # Use colors in Git commands that are capable of colored output when outputting to the terminal
